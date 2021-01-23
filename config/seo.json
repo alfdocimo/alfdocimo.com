@@ -1,15 +1,15 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "alfdocimo's personal blog",
     "author": {
-      "name": "Jose Felix",
-      "summary": "who works building clean user interfaces with React."
+      "name": "Alfredo Narváez Docimo",
+      "summary": "Front-end developer and javascript enthusiast"
     },
-    "description": "A blog created with Next.js and Tailwind.css",
+    "description": "Personal blog by Alfredo Narvaez Docimo. I share stories and insights about my career as a software engineer",
     "siteUrl": "https://nextjs-starter-blog-demo.netlify.app/",
     "language": "en-US",
     "social": {
-      "twitter": "Jose_R_Felix"
+      "twitter": "alfdocimo"
     }
   }
 }
