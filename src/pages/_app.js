@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'next-themes';
 
-import '@styles/main.css';
+import '@assets/main.css';
 
 import 'typeface-open-sans';
 import 'typeface-merriweather';
