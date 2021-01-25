@@ -10,7 +10,7 @@ export function Layout({ children }) {
     const { author } = getSiteMetaData();
 
     return (
-        <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
+        <div className="w-full min-h-screen dark:bg-gray-900 dark:text-white">
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
                 <main>{children}</main>

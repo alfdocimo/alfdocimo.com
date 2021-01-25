@@ -28,8 +28,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'sky-blue': '#6385ff',
-                'jade-green': '#39ffad'
+                'sky-blue': '#2a86d5',
+                'jade-green': '#40FFCA'
             },
             fontSize: {
                 '7xl': '4.5rem'
@@ -51,7 +51,7 @@ module.exports = {
                             backgroundColor: theme('colors.gray.700')
                         },
                         a: {
-                            color: theme('colors.sky-blue')
+                            color: theme('colors.salmon')
                         }
                     }
                 },

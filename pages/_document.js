@@ -8,7 +8,10 @@ export default class MyDocument extends Document {
 
         return (
             <Html lang={siteMetadata.language}>
-                <Head />
+                <Head>
+                    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+                    <meta name="theme-color" content="#45b5ea" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />

@@ -1,15 +1,15 @@
 {
-  "siteMetadata": {
-    "title": "alfdocimo",
-    "author": {
-      "name": "Alfredo Narváez Docimo",
-      "summary": "Front-end developer and javascript enthusiast"
-    },
-    "description": "Personal blog by Alfredo Narvaez Docimo. I share stories and insights about my career as a software engineer",
-    "siteUrl": "https://nextjs-starter-blog-demo.netlify.app/",
-    "language": "en-US",
-    "social": {
-      "twitter": "alfdocimo"
+    "siteMetadata": {
+        "title": "alfdocimo",
+        "author": {
+            "name": "Alfredo Narváez Docimo",
+            "summary": "Front-end developer and javascript enthusiast"
+        },
+        "description": "Anecdotes of a javascript enthusiast with a dash of satire. I share stories about my career in software engineering. A blog by Alfredo Narvaez Docimo.",
+        "siteUrl": "https://alfdocimo-com.vercel.app/",
+        "language": "en-US",
+        "social": {
+            "twitter": "alfdocimo"
+        }
     }
-  }
 }

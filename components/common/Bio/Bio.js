@@ -4,7 +4,7 @@ import { Image } from '..';
 import { getSiteMetaData } from '@utils/helpers';
 
 export function Bio({ className }) {
-    const { author, social } = getSiteMetaData();
+    const { description, social } = getSiteMetaData();
 
     return (
         <div className={clsx(`flex items-center`, className)}>
@@ -17,9 +17,10 @@ export function Bio({ className }) {
             />
 
             <p className="text-base leading-7">
-                All things javascript with a dash of <b className="font-semibold">satire.</b> A blog
-                by {author.name}.{' '}
-                <a href={`https://twitter.com/${social.twitter}`}>Follow me on twitter!</a>
+                {description}{' '}
+                <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noreferrer">
+                    Follow me on twitter!
+                </a>
             </p>
         </div>
     );
