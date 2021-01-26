@@ -41,11 +41,17 @@ const Header = () => {
 
     return (
         <header
-            className={clsx('flex items-center justify-between ', {
+            className={clsx('flex items-center', {
                 'mb-8': isRoot,
                 'mb-2': !isRoot
             })}>
-            <div className={'max-w-md'}>{isRoot ? <LargeTitle /> : <SmallTitle />}</div>
+            <div className={'max-w-md flex-1'}>{isRoot ? <LargeTitle /> : <SmallTitle />}</div>
+            <Link href="/about">
+                <a>About</a>
+            </Link>
+            <Link href="/about">
+                <a className="mx-2 md:mx-8">Contact</a>
+            </Link>
             {mounted && (
                 <DarkModeSwitch
                     checked={isDarkMode}
