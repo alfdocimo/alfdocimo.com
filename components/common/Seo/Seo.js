@@ -22,6 +22,10 @@ export function SEO({ title, description = '' }) {
             <meta name="twitter:creator" content={siteMetadata.social.twitter} />
             <link rel="icon" type="image/png" href="/static/favicon.ico" />
             <link rel="apple-touch-icon" href="/static/favicon.ico" />
+            <meta
+                name="google-site-verification"
+                content="2jHO7MDEENKvOFvZeHQ2vnkBzIYcAaQ-UKpTAj1xQ-4"
+            />
         </Head>
     );
 }
