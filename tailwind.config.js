@@ -29,7 +29,8 @@ module.exports = {
         extend: {
             colors: {
                 'sky-blue': '#2a86d5',
-                'jade-green': '#40FFCA'
+                'jade-green': '#40FFCA',
+                salmon: '#ff6584'
             },
             fontSize: {
                 '7xl': '4.5rem'

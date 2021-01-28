@@ -49,7 +49,7 @@ const Header = () => {
             <Link href="/about">
                 <a>About</a>
             </Link>
-            <Link href="/about">
+            <Link href="/contact">
                 <a className="mx-2 md:mx-8">Contact</a>
             </Link>
             {mounted && (

@@ -1,0 +1,15 @@
+{
+    "forms": {
+        "contactForm": {
+            "name": "Contact Form",
+            "fields": {
+                "firstName": { "type": "text", "required": true },
+                "lastName": { "type": "text", "required": true },
+                "email": { "type": "email", "required": true },
+                "message": { "type": "text", "required": true }
+            },
+            "actions": [{ "type": "email", "to": "alfredonado@gmail.com" }],
+            "allowExtraFields": false
+        }
+    }
+}
