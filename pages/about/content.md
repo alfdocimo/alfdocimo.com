@@ -5,7 +5,8 @@ Welcome to my **little** corner of the internet.
 My name is Alfredo Narváez Docimo, and I'm a javascript enthusiast. I help people through software and love sharing my experiences and insights with others. That's how this blog was born!
 
 I've always been fond of computing, ever since I was little and got my first PC.
-I remember it seemed like the coolest thing ever watching *clippy* pop up and interacting with him.
+I remember it seemed like the coolest thing ever watching 
+__clippy__ pop up and interacting with him.
 
 One of the main things that got me into web dev was the fact that I started making flash games. You know, back when flash a big deal and every website was using it. This helped me get in touch with the main concepts of programing. This was about the time when I knew I wanted to pursue this my fulltime career.
 
