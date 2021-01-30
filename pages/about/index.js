@@ -8,7 +8,7 @@ import ReactMarkdown from 'react-markdown/with-html';
 export default function About({ markdown }) {
     return (
         <Layout>
-            <SEO title="About" />
+            <SEO title="About me | Who I am and why I created this blog" />
 
             <h1
                 className={clsx(

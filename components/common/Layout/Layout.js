@@ -5,17 +5,40 @@ import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
 import { getSiteMetaData } from '@utils/helpers';
+import { RiTwitterFill, RiGithubFill, RiLinkedinBoxFill, RiInstagramLine } from 'react-icons/ri';
 
 export function Layout({ children }) {
-    const { author } = getSiteMetaData();
+    const { author, social } = getSiteMetaData();
 
     return (
         <div className="w-full min-h-screen dark:bg-gray-900 dark:text-white">
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
                 <main>{children}</main>
-                <footer className="text-lg font-light">
-                    © {new Date().getFullYear()}, {author.name}
+                <footer className="text-lg font-light flex align-center justify-between">
+                    <span className="flex-1 text-sm">
+                        © {new Date().getFullYear()}, {author.name}
+                    </span>
+                    <Link href={social.github.url}>
+                        <a target="_blank" rel="noreferrer">
+                            <RiGithubFill className="fill-current text-sky-blue dark:text-jade-green" />
+                        </a>
+                    </Link>
+                    <Link href={social.twitter.url}>
+                        <a target="_blank" rel="noreferrer">
+                            <RiTwitterFill className="mx-2 fill-current text-sky-blue dark:text-jade-green" />{' '}
+                        </a>
+                    </Link>
+                    <Link href={social.linkedin.url}>
+                        <a target="_blank" rel="noreferrer">
+                            <RiLinkedinBoxFill className="mx-2 fill-current text-sky-blue dark:text-jade-green" />{' '}
+                        </a>
+                    </Link>
+                    <Link href={social.instagram.url}>
+                        <a target="_blank" rel="noreferrer">
+                            <RiInstagramLine className="mx-2 fill-current text-sky-blue dark:text-jade-green" />{' '}
+                        </a>
+                    </Link>
                 </footer>
             </div>
         </div>

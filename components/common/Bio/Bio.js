@@ -18,7 +18,7 @@ export function Bio({ className }) {
 
             <p className="text-base leading-7">
                 {description}{' '}
-                <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noreferrer">
+                <a href={social.twitter.url} target="_blank" rel="noreferrer">
                     Follow me on twitter!
                 </a>
             </p>

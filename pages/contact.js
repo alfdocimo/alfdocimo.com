@@ -6,7 +6,7 @@ import ContactForm from '@components/common/ContactForm';
 export default function Contact() {
     return (
         <Layout>
-            <SEO title="Contact" />
+            <SEO title="Contact | Think we can collab? Hit me up!" />
 
             <h1
                 className={clsx(

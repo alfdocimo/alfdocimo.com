@@ -5,18 +5,31 @@ import style from 'react-syntax-highlighter/dist/cjs/styles/prism/dracula';
 
 import { Layout, Image, SEO, Bio } from '@components/common';
 import { getPostBySlug, getPostsSlugs } from '@utils/posts';
+import { useRouter } from 'next/router';
 
 export default function Post({ post, frontmatter, nextPost, previousPost }) {
     return (
         <Layout>
-            <SEO title={frontmatter.title} description={frontmatter.description || post.excerpt} />
+            <SEO
+                title={frontmatter.title}
+                description={frontmatter.description || post.excerpt}
+                image={frontmatter.hero}
+            />
 
             <article>
                 <header className="mb-8">
                     <h1 className="mb-2 text-6xl font-black leading-none font-display">
                         {frontmatter.title}
                     </h1>
-                    <p className="text-sm">{frontmatter.date}</p>
+                    <p className="text-sm my-4">{frontmatter.date}</p>
+                    <Image
+                        alt={frontmatter.heroAlt}
+                        src={frontmatter.hero}
+                        webpSrc={frontmatter.hero}
+                        previewSrc={frontmatter.hero}
+                        className="w-full"
+                    />
+                    <p className="text-sm my-4">{frontmatter.heroCaption}</p>
                 </header>
                 <ReactMarkdown
                     className="mb-4 prose lg:prose-lg dark:prose-dark"
@@ -81,12 +94,16 @@ const CodeBlock = ({ language, value }) => {
     );
 };
 
-const MarkdownImage = ({ alt, src }) => (
-    <Image
-        alt={alt}
-        src={require(`../../content/assets/${src}`)}
-        webpSrc={require(`../../content/assets/${src}?webp`)}
-        previewSrc={require(`../../content/assets/${src}?lqip`)}
-        className="w-full"
-    />
-);
+const MarkdownImage = ({ alt, src }) => {
+    const router = useRouter();
+
+    return (
+        <Image
+            alt={alt}
+            src={require(`../../content/assets/${router.query.slug}/${src}`)}
+            webpSrc={require(`../../content/assets/${router.query.slug}/${src}?webp`)}
+            previewSrc={require(`../../content/assets/${router.query.slug}/${src}?lqip`)}
+            className="w-full"
+        />
+    );
+};

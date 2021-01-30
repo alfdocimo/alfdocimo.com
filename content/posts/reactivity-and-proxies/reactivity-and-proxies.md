@@ -2,6 +2,9 @@
 title: Reactivity and proxies
 description: Ever think about how Vue achieves reactivity? Let's look into it.
 date: 2021-01-25
+hero: https://images.unsplash.com/photo-1611955727536-b3799f3c4ab9?auto=format&fit=crop&w=600&q=80
+heroAlt: 2 person jumping on white background
+heroCaption: Photo by Anderson Rian
 ---
 
 I recently came across an amazing lecture by Tejas Kumar on [Deconstructing React](https://www.youtube.com/watch?v=f2mMOiCSj5c&ab_channel=CodingTech). It left me wondering what we can achieve if we take the time to sit down and understand how things work under the hood. For this to work, you might have to take things **apart** and put them back together. I have been, for most of my time in the industry at least, that type of dev who likes to just plug something in, and expect it to work without further understanding. That was until I started asking myself all sorts of things like:
