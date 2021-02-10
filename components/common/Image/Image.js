@@ -5,7 +5,7 @@ export function Image({ alt, src, previewSrc, webpSrc, className }) {
         <picture className={className}>
             <source type="image/webp" data-srcset={webpSrc} />
             <source type="image/png" data-srcset={src} />
-            <img className={`lazyload blur ${className}`} alt={alt} src={previewSrc} />
+            <img key={src} className={`lazyload blur ${className}`} alt={alt} src={previewSrc} />
         </picture>
     );
 }
