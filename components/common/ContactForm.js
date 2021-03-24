@@ -64,7 +64,7 @@ function ContactForm() {
                                         id="lastName"
                                         name="lastName"
                                         type="text"
-                                        placeholder="You last name"
+                                        placeholder="Your last name"
                                     />
                                 </div>
                             </div>
