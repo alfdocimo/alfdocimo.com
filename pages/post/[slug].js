@@ -96,13 +96,18 @@ const CodeBlock = ({ language, value }) => {
 
 const MarkdownImage = ({ alt, src }) => {
     const router = useRouter();
+    // TODO: Self hosted images? Maybe externalize to CDN
+
+    const imgPath =
+        (!src.includes('http') && require(`../../content/assets/${router.query.slug}/${src}`)) ||
+        src;
 
     return (
         <Image
             alt={alt}
-            src={require(`../../content/assets/${router.query.slug}/${src}`)}
-            webpSrc={require(`../../content/assets/${router.query.slug}/${src}?webp`)}
-            previewSrc={require(`../../content/assets/${router.query.slug}/${src}?lqip`)}
+            src={imgPath}
+            webpSrc={`${imgPath}?webp`}
+            previewSrc={`${imgPath}?lqip`}
             className="w-full"
         />
     );
