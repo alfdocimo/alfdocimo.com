@@ -19,7 +19,10 @@ export function Bio({ className }) {
             <p className="text-base leading-7">
                 {description}{' '}
                 <a href={social.twitter.url} target="_blank" rel="noreferrer">
-                    Follow me on twitter!
+                    Follow me on twitter,
+                </a>{' '}
+                <a href={social.youtube.url} target="_blank" rel="noreferrer">
+                    and check out my YouTube channel!
                 </a>
             </p>
         </div>

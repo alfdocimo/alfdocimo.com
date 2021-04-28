@@ -5,7 +5,13 @@ import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
 import { getSiteMetaData } from '@utils/helpers';
-import { RiTwitterFill, RiGithubFill, RiLinkedinBoxFill, RiInstagramLine } from 'react-icons/ri';
+import {
+    RiTwitterFill,
+    RiGithubFill,
+    RiLinkedinBoxFill,
+    RiInstagramLine,
+    RiYoutubeFill
+} from 'react-icons/ri';
 
 export function Layout({ children }) {
     const { author, social } = getSiteMetaData();
@@ -37,6 +43,11 @@ export function Layout({ children }) {
                     <Link href={social.instagram.url}>
                         <a target="_blank" rel="noreferrer">
                             <RiInstagramLine className="mx-2 fill-current text-sky-blue dark:text-jade-green" />{' '}
+                        </a>
+                    </Link>
+                    <Link href={social.youtube.url}>
+                        <a target="_blank" rel="noreferrer">
+                            <RiYoutubeFill className="mx-2 fill-current text-sky-blue dark:text-jade-green" />{' '}
                         </a>
                     </Link>
                 </footer>

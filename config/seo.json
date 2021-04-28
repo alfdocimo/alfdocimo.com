@@ -12,7 +12,11 @@
             "twitter": { "handle": "alfdocimo", "url": "https://twitter.com/Alfdocimo" },
             "github": { "handle": "alfdocimo", "url": "https://github.com/alfdocimo" },
             "linkedin": { "handle": "alfdocimo", "url": "https://linkedin.com/in/alfdocimo" },
-            "instagram": { "handle": "alfdocimo", "url": "https://instagram.com/alfdocimo" }
+            "instagram": { "handle": "alfdocimo", "url": "https://instagram.com/alfdocimo" },
+            "youtube": {
+                "handle": "Alfdocimo Makes",
+                "url": "https://www.youtube.com/channel/UCma3CLkJEvrTcXjrCI9gXLw/videos"
+            }
         }
     }
 }
