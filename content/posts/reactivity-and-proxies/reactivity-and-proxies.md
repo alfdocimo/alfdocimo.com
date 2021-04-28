@@ -11,6 +11,9 @@ I recently came across an amazing lecture by Tejas Kumar on [Deconstructing Reac
 
 Ok, if that's how React works, then _how does Vue work? Is it all magic? Why is the sky blue? What's the meaning of life?_
 
+<iframe width="608" height="315" src="https://www.youtube.com/embed/QgGnUfxfFSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<sub>You can also check out this video on my YouTube channel for more info!</sub>
+
 I'm not a Vue developer. I do not prefer any framework or library over another. I believe that there's no one-size-fits-all solution for all that you can do in Front End. One thing that I do love, and you might have guessed it from the blog's description, is **javascript**, and digging into its capabilities, and understanding it to its core.
 
 Among some of these core concepts, lie some niche built-in utilities that are rarely used. Yes, I'm talking about **proxies**.
